@@ -1,0 +1,5 @@
+volumes/artifactory/*
+volumes/jenkins/*
+
+! volumes/artifactory/.gitkeep
+! volumes/jenkins/.gitkeep
