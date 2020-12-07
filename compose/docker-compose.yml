@@ -12,6 +12,9 @@ services:
         - docker_network
     ubuntu_slave:
         container_name: ubuntu2
+        environment:
+        - AWS_ACCESS_KEY_ID=$AWS_ACCESS_KEY_ID
+        - AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
         volumes: 
         - /var/run/docker.sock:/var/run/docker.sock
         build:
